@@ -281,9 +281,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 36px;
+    height: 32px;
     width: auto;
-    filter: brightness(0) invert(1);
 }
 
 .nav-menu {
@@ -1823,8 +1822,7 @@ section {
 }
 
 .footer-logo .logo-img {
-    height: 40px;
-    filter: brightness(0) invert(1);
+    height: 36px;
 }
 
 .footer-brand > p {
