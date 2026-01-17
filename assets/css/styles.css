@@ -404,14 +404,16 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 200% 200%;
 }
 
-/* Noise Texture Overlay */
+/* Subtle Gradient Overlay - Removed harsh noise */
 .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 0.4;
     z-index: -1;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background: linear-gradient(180deg,
+        transparent 0%,
+        rgba(10, 15, 28, 0.3) 50%,
+        rgba(10, 15, 28, 0.6) 100%);
 }
 
 /* Decorative Elements */
@@ -1307,11 +1309,65 @@ section {
     overflow: hidden;
 }
 
-.pricing-card:first-child {
-    border-color: var(--color-secondary);
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
 }
 
-.pricing-card:first-child::before {
+.pricing-card.featured:hover {
+    box-shadow: var(--shadow-2xl), var(--shadow-glow);
+}
+
+/* Enhanced Early Bird Badge */
+.pricing-badge-large {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gradient-gold);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    padding: var(--spacing-sm) var(--spacing-2xl);
+    border-radius: var(--radius-2xl);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(245, 158, 11, 0.7);
+        transform: translateX(-50%) scale(1.02);
+    }
+}
+
+.badge-discount {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.badge-label {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.pricing-card.featured {
+    border-color: var(--color-secondary);
+    padding-top: var(--spacing-3xl);
+}
+
+.pricing-card.featured::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1321,13 +1377,39 @@ section {
     background: var(--gradient-accent);
 }
 
-.pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
+.price-highlight {
+    font-family: var(--font-display);
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
 }
 
-.pricing-card:first-child:hover {
-    box-shadow: var(--shadow-2xl), var(--shadow-glow);
+.price-highlight-secondary {
+    font-family: var(--font-display);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-accent);
+    letter-spacing: -0.02em;
+}
+
+/* Group Pricing Badge */
+.pricing-badge-group {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    padding: var(--spacing-xs) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    box-shadow: 0 4px 15px rgba(6, 214, 160, 0.4);
 }
 
 .pricing-badge {
@@ -1406,10 +1488,16 @@ section {
 
 .pricing-card.secondary {
     background: var(--color-gray-100);
+    position: relative;
+    padding-top: var(--spacing-2xl);
 }
 
 .pricing-card.secondary .pricing-header {
     border-bottom-color: var(--color-gray-300);
+}
+
+.pricing-card.secondary h3 {
+    font-size: var(--font-size-lg);
 }
 
 .pricing-note {
