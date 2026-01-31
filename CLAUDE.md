@@ -43,9 +43,10 @@ Colors and theming use CSS variables defined in `:root`:
 
 - Date: June 16, 2026
 - Venue: Auditorio El Beatriz Madrid
-- Pricing: Early Bird 30% discount (until March 23), Group +10% additional discount for 3+ committee members
-- Capacity: 150 C-Level attendees
+- Capacity: 150 C-Level and Directivos attendees
+- Current mode: Waiting list (pricing not yet public)
 - LinkedIn: linkedin.com/company/inteligenciaartificialagentica
+- Positioning: "El primer foro de IA Agéntica para Banca y Seguros"
 
 ## Language
 
