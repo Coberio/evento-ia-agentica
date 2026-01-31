@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================
     // COUNTDOWN TIMER WITH ANIMATION
     // ================================================
-    const eventDate = new Date('2026-06-11T08:30:00').getTime();
+    const eventDate = new Date('2026-06-16T08:30:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================
     console.log('%c IA Agéntica 2026 ', 'background: linear-gradient(135deg, #4F46E5, #06D6A0); color: white; font-size: 24px; padding: 15px 30px; border-radius: 12px; font-weight: bold;');
     console.log('%c El futuro de los agentes autónomos en Banca & Seguros ', 'color: #64748B; font-size: 14px; padding: 5px 0;');
-    console.log('%c 11 de Junio 2026 | Auditorio El Beatriz Madrid ', 'color: #64748B; font-size: 12px;');
+    console.log('%c 16 de Junio 2026 | Auditorio El Beatriz Madrid ', 'color: #64748B; font-size: 12px;');
     console.log('%c www.inteligenciaartificialagentica.com ', 'color: #4F46E5; font-size: 14px; font-weight: bold;');
 
 });

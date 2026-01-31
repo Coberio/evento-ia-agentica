@@ -41,7 +41,7 @@ Colors and theming use CSS variables defined in `:root`:
 
 ## Key Event Details (for content updates)
 
-- Date: June 11, 2026
+- Date: June 16, 2026
 - Venue: Auditorio El Beatriz Madrid
 - Pricing: Early Bird 30% discount (until March 23), Group +10% additional discount for 3+ committee members
 - Capacity: 150 C-Level attendees
