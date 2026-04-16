@@ -675,3 +675,35 @@ function throttle(func, limit) {
         }
     };
 }
+
+// ================================================
+// LEGAL MODALS
+// ================================================
+function openModal(id) {
+    const overlay = document.getElementById(id);
+    if (!overlay) return;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    overlay.querySelector('.modal-body').scrollTop = 0;
+    overlay.addEventListener('click', function onOverlayClick(e) {
+        if (e.target === overlay) {
+            closeModal(id);
+            overlay.removeEventListener('click', onOverlayClick);
+        }
+    });
+}
+
+function closeModal(id) {
+    const overlay = document.getElementById(id);
+    if (!overlay) return;
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(function(m) {
+            closeModal(m.id);
+        });
+    }
+});
