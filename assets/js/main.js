@@ -643,7 +643,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // CONSOLE BRANDING
     // ================================================
     console.log('%c IA Agéntica 2026 ', 'background: linear-gradient(135deg, #4F46E5, #06D6A0); color: white; font-size: 24px; padding: 15px 30px; border-radius: 12px; font-weight: bold;');
-    console.log('%c El futuro de los agentes autónomos en Banca & Seguros ', 'color: #64748B; font-size: 14px; padding: 5px 0;');
+    console.log('%c El primer foro de IA Agéntica en Seguros ', 'color: #64748B; font-size: 14px; padding: 5px 0;');
     console.log('%c 20 de Octubre 2026 | Auditorio El Beatriz Madrid ', 'color: #64748B; font-size: 12px;');
     console.log('%c www.inteligenciaartificialagentica.com ', 'color: #4F46E5; font-size: 14px; font-weight: bold;');
 
