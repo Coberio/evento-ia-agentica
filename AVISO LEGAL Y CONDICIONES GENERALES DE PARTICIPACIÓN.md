@@ -33,7 +33,7 @@ El presente documento establece los términos y condiciones que rigen:
 1. El acceso y uso del sitio web **https://www.inteligenciaartificialagentica.com** (en adelante, "el **Sitio Web**").  
 2. La inscripción, participación y asistencia al foro **IA Agéntica 2026 | Seguros** (en adelante, "el **Evento**"), organizado por COBERIO, S.L., dirigido al ecosistema asegurador.
 
-El Evento está previsto, tentativamente, para el 20 de octubre de 2026, de 09:00 a 15:30 h, en el Auditorio El Beatriz Madrid (C/ José Ortega y Gasset, 29, 28006 Madrid). Circunstancias ajenas al organizador así como motivos de fuerza mayor podrían hacer que dicha fecha fuese modificada, lo cual sería oportunamente notificado por esta misma vía así como por correo electrónico a los asistentes inscritos.
+El Evento está previsto, tentativamente, para diciembre de 2026, de 09:00 a 15:30 h, en el Auditorio El Beatriz Madrid (C/ José Ortega y Gasset, 29, 28006 Madrid). Circunstancias ajenas al organizador así como motivos de fuerza mayor podrían hacer que dicha fecha fuese modificada, lo cual sería oportunamente notificado por esta misma vía así como por correo electrónico a los asistentes inscritos.
 
 La navegación por el Sitio Web, la solicitud de inscripción en la Lista de Espera o la formalización de la inscripción al Evento implican la **lectura, comprensión y aceptación plena** de este Aviso Legal. En caso de no estar de acuerdo con estos términos deberá abstenerse de utilizar el Sitio Web o de inscribirse en el Evento.
 

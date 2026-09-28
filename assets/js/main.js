@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================
     // COUNTDOWN TIMER WITH ANIMATION
     // ================================================
-    const eventDate = new Date('2026-10-20T09:00:00').getTime();
+    const eventDate = new Date('2026-12-01T09:00:00+01:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================
     console.log('%c IA Agéntica 2026 ', 'background: linear-gradient(135deg, #4F46E5, #06D6A0); color: white; font-size: 24px; padding: 15px 30px; border-radius: 12px; font-weight: bold;');
     console.log('%c El primer foro de IA Agéntica en Seguros ', 'color: #64748B; font-size: 14px; padding: 5px 0;');
-    console.log('%c 20 de Octubre 2026 | Auditorio El Beatriz Madrid ', 'color: #64748B; font-size: 12px;');
+    console.log('%c Diciembre 2026 | Auditorio El Beatriz Madrid ', 'color: #64748B; font-size: 12px;');
     console.log('%c www.inteligenciaartificialagentica.com ', 'color: #4F46E5; font-size: 14px; font-weight: bold;');
 
 });
